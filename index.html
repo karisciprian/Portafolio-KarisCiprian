@@ -19,20 +19,23 @@
             
             <div class="navegador">
                 <div class="personalLogo">
-                    <img src="imag/logo.png" alt="logo">
+                    <img class="imagenLogoPequeño" src="imag/logo.png" alt="logo">
                 </div>
                 <ul class="lista">
-                    <li class="about">About</li>
-                    <li  class="skill">Skills</li>
-                    <li  class="proyects">Proyectos</li>
-                    <button class="btn-list" type="button">Let`s Talk</button>
+                   <a href="#cajaAcercaDe"><li class="about">About Me</li></a>
+                   <a href="#skills"><li  class="skill">Skills</li></a>
+                   <a href="#proyects"><li  class="proyects">Proyects</li></a>
+                   <button class="btn-list" type="button">Let`s Talk</button>
+                   <div class="puntoRojo"></div>
                 </ul>
             </div>
             <div class="logo">
                 <div class="cajalogo">  
-                    <p class="hi">Hi&nbsp;I'm</p>
+                    <p class="hi">Hello,&nbsp;I am</p>
                     <h2>Karis Cipran</h2>
                     <p class="dev" >Web Developer / Front-End</p>
+                    <a class="btn-cv" type="button" href="https://drive.google.com/file/d/1vWwU2TyDN9DAC9FSe8YzQTrcHvFDiGwC/view?usp=sharing">Downloand Cv</a>
+                    </a>
                 </div>
 
                 <div class="imagenParaPerfil">
@@ -41,9 +44,12 @@
             </div>
         </header>
 
-        <div  class="cajaAcercade">
+        <div  class="cajaAcercade" id="cajaAcercaDe">
             <div class="aboutMePrincipal">
-                <h1 class="hAbout">About Me</h1> 
+                <h1 class="hAbout" id="hAbout">About Me</h1> 
+                <div class="uno"></div>
+                <div class="dos"></div>
+                <div class="tres"></div>
             </div>
             <div class="textoPrincipal">
                 <p class="texto">
@@ -58,7 +64,7 @@
             </div> 
         </div>
 
-        <div class="head">
+        <div class="head" id="skills">
             <h6>Skills</h6>
         </div>
 
@@ -151,11 +157,11 @@
 
         </section>
 
-        <div class="headDos">
+        <div class="headDos" id="proyects">
             <h6>PROYECTOS</h6>
         </div>
 
-        <section class="cajaProyectos">
+        <section class="cajaProyectos" >
 
             <div class="proyecto">
                 <div class="imgProyectos">
