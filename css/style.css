@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -8,7 +9,16 @@
 }
 
 :root {
-    --mi-fuente: 'Arial', sans-serif;
+    --mi-roboto: 'roboto', 'roboto slab';
+    --mi-sans: 'sans', 'sans serif';
+    --goo-font: "Libre Baskerville", serif;
+     font-weight: 400;
+     font-style: normal;
+
+    --goo-font-cursuva:"Dancing Script", "cursive";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
   }
   
   
@@ -16,6 +26,7 @@
     --color-verde-oscuro: #154c59; 
     --color-verde-m-oscuro: #08262e;/* color: var(--mi-color); */
     --color-crema: #fff6f1;
+    --color-crema-oscuro:#d9bdaf;
     --color-doradoUno:#ffc600;
     --color-doradoDos:#d9ad26;
     --color-doradoTres:#bf930d;
@@ -24,13 +35,25 @@
     --color-rosa:#f58786;
     --color-gris-claro: #ededed;
     --color-amarillo: #f0d085;
+    --color-blanco: #ffffff;
+    --color-verde:#979d99;
 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-blanco);
+    
 }
 
 
 .container{
     display: flex;
     flex-direction: column;
+    width: 80%;
+    background-color: var(--color-blanco);
+   
 }
 
 .cabeza{
@@ -44,10 +67,8 @@
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- 
+ border: solid 2px var(--color-blanco);
 }
-
-
 
 .personalLogo{
     width: 20%;
@@ -66,6 +87,8 @@
     height: 20%;
     display: flex;
     justify-content: space-between;
+    background: transparent;
+    backdrop-filter: blur(20px);
    
 }
 
@@ -117,7 +140,7 @@ a{
 }
 .puntoRojo{
     position: absolute;
-    background-color: #154c59;
+    background-color:var(--color-verde-oscuro);
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -150,7 +173,9 @@ a{
     height: 100%;
     justify-content:start;
     align-items: center;
+
 }
+
 .hi{
   
     align-items: center;
@@ -161,7 +186,11 @@ a{
     font-family: "courgette";
     font-weight: 100;
     letter-spacing: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
 }
+
 .dev{
     align-items: center;
     color: var(--color-verde-oscuro);
@@ -180,7 +209,7 @@ a{
     margin-right: 15%;
     text-decoration: none;
     background-color:var(--color-doradoTres);
-    color: #fff6f1;
+    color: var(--color-crema);
     font-size: 0.8rem;
     text-decoration: none;
 }
@@ -211,6 +240,8 @@ a:hover{
     flex-direction: row; 
     justify-content: space-evenly;
     align-items: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
 }
 .btn-cv:hover{
     font-size: 0.8rem;
@@ -268,10 +299,17 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-.uno{}
-.dos{}
+.uno{
+    background-color: var(--color-verde-oscuro);
+    width: 50px;
+}
+.dos{
+    background-color: var(--color-rosa);
+    width: 50px;
+}
 .tres{
-
+ background-color: var(--color-doradoTres);
+ width: 50px;
 }
 
 .btn-acercaDe{
@@ -350,39 +388,6 @@ section{
    
     
 }
-.fa-html5{
-    color: rgb(253, 80, 5);
-    font-size: 3.5rem;
-}
-.fa-css3-alt{
-    color: #375ea1;
-    font-size: 3.5rem;
-}
-.fa-js{
-    color: #dfb321;
-    font-size: 3.5rem;
-}
-.fa-git{
-    color: #383137;
-    font-size: 3.5rem;
-}
-
-.fa-bootstrap{
-    color: #2e0153;
-    font-size: 3.5rem;
-}
-.fa-figma{
-   color: #bc409b;
-    font-size: 3.5rem;
-}
-
-.iconohabilidades{
-    margin: 10px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #234772;
-}
-
 
 .formacion{
     width: 100%;
@@ -463,71 +468,145 @@ section{
 .headDos{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 250px;
-    font-size:3rem;
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-blanco);       
+}
+.h-de-proyectos{
+    display: block;   
+    width: 100%;   
+    border-radius: 8px;  
+    z-index: 1;
+    font-size:5rem;
     text-align: center;
-    margin-bottom: 3%;
-    color: #e48c33;
+    font-family: var(--goo-font-cursuva);
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-verde-m-oscuro);
+    background-color: var(--color-crema-oscuro);
+}
 
+.h-de-proyectos::first-letter{
+ font-size: 9rem;
+}
 
-        font-family: "Courgette";
-        font-weight: 400;
-        font-style: normal;
-      
-      
+.contenedor-proyectos{
+    display: flex;
+    width: 100%;
+    height: 1200px;
+    justify-content: center;
+   
+   
 }
 
 .cajaProyectos{
     display: flex;
+   
+    padding-top: 60px;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     width: 100%;
-    height: 1600px; 
-    background-color: #fff3e0;
-    padding-top: 5%;
+    height: 100%;   
+    background-color: var(--color-crema);
+    box-sizing: border-box;
+    justify-content: space-between;
 }
+
 .proyecto{
+    box-sizing: border-box;
     display: flex;
+    margin: 20px;
+    padding: 0 150px;
     flex-direction: row;
     align-items: center;
-    width: 80%;
-    height: 30%;
-    justify-content: space-between;
-    margin-bottom: 5%;
+    width: 100%;
+    height: 330px;
+    justify-content: space-between; 
+   
 }
 
 
 .textoProyecto{
-    width: 40%;
-    height: 80%;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    
 }
-.hProyectos{
- font-family: "courguette" ;
+
+.hProyectos{ 
+ display: block;
+ color: var(--color-verde-m-oscuro);
+ font-size: 1.8rem;
+ height: 30%;
+ letter-spacing: 5px;
+ font-family: var(--goo-font-cursuva);
 }
+
+.hProyectos::first-letter{
+    font-size: 4.5rem;
+}
+
 .pProyectos{
-height: 50%;
+ font-size: 1rem;
+ width: 70%;
+ height: 40%;
+ letter-spacing: 1px;
+ font-family: var(--goo-font);
+ color: var(--color-oscuroUno);
+
+}
+.pProyectos::first-letter{
+    font-size: 2rem;
+}
+
+.btn-proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    color: var(--color-blanco);
+    background-color: var(--color-verde-oscuro);
+    font-family: var(--goo-font);
+    border-radius: 10px;
+    border: none;
 
 }
 
-.imgProyectos{
-  width:40%;
+.contenedor-img-proyecto{
+  width:35%;
   height: 100%;
-  background-color: #E48C33;
+  margin: 40px 30px 40px 30px;
+  background-color:var(--color-crema-oscuro);
+  border-radius: 8px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .imagenProyectos{
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 30px;
-    left: 35px;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    border-radius: 50% 1%;
+    top: 15%;
+    right: 20%;
+
 }
+.imagenProyectos-dos{
+    width: 90%;
+    height: 90%;
+    position: absolute; 
+    border-radius: 1% 50%;
+    top: 15%;
+    left: 25%
+}  
 
 
 .contenedor-contactos{

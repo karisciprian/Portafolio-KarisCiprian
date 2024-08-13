@@ -10,13 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
     <title>KARIS PORTAFOLIO</title>
 </head>
 <body>
     <main class="container">
         <header class="cabeza">
-            
+
             <div class="navegador">
                 <div class="personalLogo">
                     <img class="imagenLogoPequeño" src="imag/logo.png" alt="logo">
@@ -158,60 +161,66 @@
         </section>
 
         <div class="headDos" id="proyects">
-            <h6>PROYECTOS</h6>
+            <h6 class="h-de-proyectos">Projects</h6>
         </div>
 
-        <section class="cajaProyectos" >
+        <div class="contenedor-proyectos">
 
-            <div class="proyecto">
-                <div class="imgProyectos">
-                    <img class="imagenProyectos" src="imag/fotoperfil.jpg" alt="logo">
-                </div> 
-                      
-                <div class="textoProyecto">
+            
+            <section class="cajaProyectos" >
+
+                <div class="proyecto">
+                    <div class="textoProyecto">
+                        <h3 class="hProyectos">Encriptador De Texto</h3>
+                        <p class="pProyectos">
+                            Este es un proyecto, hecho con html, css y JavaScript
+                        </p>
+                        <button type="button"class="btn-proyectos" >Show Proyect</button>
+                    </div>  
+    
+                    <div class="contenedor-img-proyecto">
+                            <img class="imagenProyectos" src="imag/paginaDos.jpg" alt="logo">
+                    </div> 
+                                    
+                </div>
+
+                <div class="proyecto">
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagenProyectos-dos" src="imag/paginaDos.jpg" alt="logo">
+                    </div> 
+                        
+                    <div class="textoProyecto">
+                        <h3 class="hProyectos">Encriptador de Texto</h3>
+                        <p class="pProyectos">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Iste harum eligendi officiis natus, soluta quis.
+                        </p>
+                        <button type="button" class="btn-proyectos">Show Proyect</button>
+                    </div>  
+                </div>
+
+
+                <div class="proyecto">
+                    
+                    <div class="textoProyecto">
                     <h3 class="hProyectos">Encriptador de Texto</h3>
                     <p class="pProyectos">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Iste harum eligendi officiis natus, soluta quis.
                     </p>
-                    <button type="button">Show Proyect</button>
-                </div>  
-            </div>
 
-            <div class="proyecto">
-                <div class="textoProyecto">
-                  <h3 class="hProyectos">Encriptador de Texto</h3>
-                  <p class="pproyectos">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Iste harum eligendi officiis natus, soluta quis.
-                  </p>
-                  <button type="button">Show Proyect</button>
-                </div>  
-  
-                <div class="imgProyectos">
-                        <img class="imagenProyectos" src="imag/fotoperfil.jpg" alt="logo">
-                </div> 
-                                   
-            </div>
+                    <button type="button" class="btn-proyectos" >Show Proyect</button>
 
-            <div class="proyecto">
-                
-                <div class="imgProyectos">
-                     <img class="imagenProyectos" src="imag/fotoperfil.jpg" alt="logo">
-                </div> 
-                
-                <div class="textoProyecto">
-                  <h3 class="hProyectos">Encriptador de Texto</h3>
-                  <p class="pproyectos">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Iste harum eligendi officiis natus, soluta quis.
-                  </p>
-                  <button type="button">Show Proyect</button>
-                </div>           
-            </div>
+                    </div>
+                    
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagenProyectos" src="imag/paginaDos.jpg" alt="logo">
+                    </div> 
+                </div>
 
 
-        </section>
+            </section>
+        </div>    
 
         <section class="contenedor-contactos">
 
@@ -246,22 +255,23 @@
 
         </section>    
 
+        <footer>
 
+            <div class="icon" >
+                <img class="iconosFooter" src="imag/git.png" alt="git">
+                <img class="iconosFooter" src="imag/gmail.png" alt="gmail">
+                <img class="iconosFooter" src="imag/linkedin.png" alt="git">
+            </div> 
+            
+            <div class="copy">
+                <p>Copiright by Karis 2024</p>
+            </div>
+
+        </footer>
        
     </main>
 
-    <footer>
-
-        <div class="icon" >
-            <img class="iconosFooter" src="imag/git.png" alt="git">
-            <img class="iconosFooter" src="imag/gmail.png" alt="gmail">
-            <img class="iconosFooter" src="imag/linkedin.png" alt="git">
-        </div> 
-        
-        <div class="copy">
-            <p>Copiright by Karis 2024</p>
-        </div>
-    </footer>
+   
        
 </body>
 </html>
