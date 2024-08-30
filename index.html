@@ -21,138 +21,151 @@
         <header class="cabeza">
 
             <div class="navegador">
-                <div class="personalLogo">
-                    <img class="imagenLogoPequeño" src="imag/logo.png" alt="logo">
-                </div>
                 <ul class="lista">
-                   <a href="#cajaAcercaDe"><li class="about">About Me</li></a>
-                   <a href="#skills"><li  class="skill">Skills</li></a>
-                   <a href="#proyects"><li  class="proyects">Proyects</li></a>
-                   <button class="btn-list" type="button">Let`s Talk</button>
+                   <a href="#cajaAcercaDe"> <li class="about">About Me</li></a>
+                   <a href="#skills"> <li>Skills</li></a>
+                   <a href="#proyects"> <li  class="proyects">Proyects</li></a>
+                   <button class="btn-list" type="button" id="letstalk">Let`s Talk</button>
                    <div class="puntoRojo"></div>
                 </ul>
             </div>
             <div class="logo">
                 <div class="cajalogo">  
-                    <p class="hi">Hello,&nbsp;I am</p>
-                    <h2>Karis Cipran</h2>
+                    <p class="hi">Hi,&nbsp;I am</p>
+                    <h2 class="mi-nombre">Karis Cipran</h2>
                     <p class="dev" >Web Developer / Front-End</p>
                     <a class="btn-cv" type="button" href="https://drive.google.com/file/d/1vWwU2TyDN9DAC9FSe8YzQTrcHvFDiGwC/view?usp=sharing">Downloand Cv</a>
                     </a>
                 </div>
-
-                <div class="imagenParaPerfil">
-                    <img src="imag/foto1.png" alt="">
-                </div>
             </div>
         </header>
 
-        <div  class="cajaAcercade" id="cajaAcercaDe">
-            <div class="aboutMePrincipal">
-                <h1 class="hAbout" id="hAbout">About Me</h1> 
-                <div class="uno"></div>
-                <div class="dos"></div>
-                <div class="tres"></div>
-            </div>
-            <div class="textoPrincipal">
-                <p class="texto">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, expedita,
-                    odit unde sint ea commodi inventore repudiandae consequatur minima facere
-                    nam maxime esse, dolor fuga? Lorem ipsum dolor sit amet, consectetur adi
-                    pisicing elit. Fuga vero officia porro repellendus! Quis reiciendis a ex 
-                    dignissimos illum rerum aspernatur labore ratione architecto rem!
-                </p>
+        <div  class="contenedor-Acerca-de" id="cajaAcercaDe">
 
-                <button class="btn-acercaDe" type="button">Ver Mas</button>
-            </div> 
+            <div class="imagenParaPerfil">
+                <img src="imag/foto3.png" alt="">
+            </div>
+
+
+            <div class="contenedor-de-conedor-de-about">
+                <div class="contenedor-about">
+                    <h1 class="h-About" id="hAbout">About Me</h1> 
+                </div>
+                
+                <div class="textoPrincipal">
+                    <p class="texto-about">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, expedita,
+                        odit unde sint ea commodi inventore repudiandae consequatur minima facere
+                        nam maxime esse, dolor fuga? Lorem ipsum dolor sit amet, consectetur adi
+                        pisicing elit. Fuga vero officia porro repellendus! Quis reiciendis a ex 
+                        dignissimos illum rerum aspernatur labore ratione architecto rem!
+                    </p>
+
+                </div> 
+            </div>    
+
         </div>
 
-        <div class="head" id="skills">
-            <h6>Skills</h6>
-        </div>
+       
 
-        <section class="cajaHab">
-            
+        <section class="contenedor-padre-Hab">
 
-            <div class="habilidades">
-                <div class="hab">
-                    <i class="fa-brands fa-html5"></i>
-                    <p class="iconohabilidades">Html</p>
-                </div>
-
-                <div class="hab">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p class="iconohabilidades">Css3</p>
-                </div>
-
-                <div class="hab">
-                    <i class="fa-brands fa-js"></i>
-                    <p class="iconohabilidades">JavaScript</p>
-                </div>
+            <div class="contenedor-head-hab" id="skills">
+                <h6 class="head-hab">Skills</h6>
+            </div>
+        
+            <div class="contenedor-de-las-habilidades">
+                <div class="skill html-hab">Html</div>
+                <div class="skill css-hab">Css</div>
+                <div class="skill js-hab">JavaScript</div>
+                <div class="skill bootstrap-hab">BootStrap</div>
+                <div class="skill figma-hab">Figma</div>
+                <div class="skill canva-hab">Canva</div>
+                <div class="skill git-hab">Git</div>
+                <div class="skill flex-hab">Flex Box</div>
+                <div class="skill grid-hab">Css Grid</div>
 
             </div>
 
-            <div class="habilidades">    
-
-                <div class="hab">
-                    <i class="fa-brands fa-git"></i>
-                    <p class="iconohabilidades">Git</p>
-                </div>
-
-                <div class="hab">
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <p class="iconohabilidades">Bootstrap</p>
-                </div>
-
-                <div class="hab">
-                    <i class="fa-brands fa-figma"></i>
-                    <p class="iconohabilidades">Figma</p>
-                </div>
-            </div>
         </section>
 
         <section class="formacion">
 
             <div class="headEduc">
-                <h6>Education</h6>
+                <h6 class="head-e-formacion">Education</h6>
             </div>
             
 
             <div class="formacionRow">
 
-                <div class="imagenTexto">
-                    <img class="imagenC" src="imag/images.jpg" alt="IBM">
+                <div class="contenedor-de-los-cursos">
 
-                    <div class="cursoBoton">
-                        <p class="cursos">Desarrollo Web</p>
-                        <button class="boton-curso"  type="button">Show Cert</button>
+                    <div class="contenedor-img-curso">
+                        <img class="imagenCurso" src="imag/ALURA.png" alt="IBM">
+                    </div>    
+
+                    <div class="contenedo-de-btn-texto-curso">
+                        <div class="contenedor-curso">
+                            <p class="cursos">Desarrollo Web</p>
+                        </div>
+
+                        <div class="contenedor-btn-c">
+                            <button class="boton-curso"  type="button">Show Cert</button>
+                        </div>    
                     </div>
                 </div>
 
-                <div class="imagenTexto">    
-                    <img class="imagenC" src="imag/JADOMINICANA.png" alt="JDOM"> 
+                <div class="contenedor-de-los-cursos">
 
-                    <div class="cursoBoton">
-                        <p class="cursos">Front-End</p>
-                        <button class="boton-curso"  type="button">Show Cert</button>
+                    <div class="contenedor-img-curso">
+                        <img class="imagenCurso" src="imag/IBM2.png" alt="IBM">
+                    </div>    
+
+                    <div class="contenedo-de-btn-texto-curso">
+                        
+                        <div class="contenedor-curso">
+                            <p class="cursos">Desarrollo Web</p>
+                        </div>
+
+                        <div class="contenedor-btn-c">
+                            <button class="boton-curso"  type="button">Show Cert</button>
+                        </div>    
                     </div>
                 </div>
 
-                <div class="imagenTexto">    
-                    <img class="imagenC" src="imag/MUJERDIGITAL.jpg" alt="DIGITAL"> 
+                <div class="contenedor-de-los-cursos">
 
-                    <div class="cursoBoton">
-                        <p class="cursos">Soft Skills</p>
-                        <button class="boton-curso" type="button">Show Cert</button>
+                    <div class="contenedor-img-curso">
+                        <img class="imagenCurso" src="imag/JADOMINICANA.png" alt="IBM">
+                    </div>    
+
+                    <div class="contenedo-de-btn-texto-curso">
+                        
+                        <div class="contenedor-curso">
+                            <p class="cursos">Desarrollo Web</p>
+                        </div>
+
+                        <div class="contenedor-btn-c">
+                            <button class="boton-curso"  type="button">Show Cert</button>
+                        </div>    
                     </div>
                 </div>
 
-                <div class="imagenTexto">    
-                    <img class="imagenC" src="imag/JADOMINICANA.png" alt="JDOM"> 
+                <div class="contenedor-de-los-cursos">
 
-                    <div class="cursoBoton">    
-                        <p class="cursos">Front-End</p>
-                        <button class="boton-curso"  type="button">Show Cert</button>
+                    <div class="contenedor-img-curso">
+                        <img class="imagenCurso" src="imag/UDEMY.png" alt="IBM">
+                    </div>    
+
+                    <div class="contenedo-de-btn-texto-curso">
+                       
+                        <div class="contenedor-curso">
+                            <p class="cursos">Desarrollo Web</p>
+                        </div>
+
+                        <div class="contenedor-btn-c">
+                            <button class="boton-curso"  type="button">Show Cert</button>
+                        </div>    
                     </div>
                 </div>
 
@@ -171,11 +184,14 @@
 
                 <div class="proyecto">
                     <div class="textoProyecto">
-                        <h3 class="hProyectos">Encriptador De Texto</h3>
+                        <h3 class="hProyectos">Text Encryptor</h3>
                         <p class="pProyectos">
                             Este es un proyecto, hecho con html, css y JavaScript
                         </p>
-                        <button type="button"class="btn-proyectos" >Show Proyect</button>
+                        
+                        <div class="contenedor-btn-proyectos">
+                            <button type="button" class="btn-proyectos" >Show Proyect</button>
+                        </div>    
                     </div>  
     
                     <div class="contenedor-img-proyecto">
@@ -195,7 +211,10 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Iste harum eligendi officiis natus, soluta quis.
                         </p>
-                        <button type="button" class="btn-proyectos">Show Proyect</button>
+                       
+                        <div class="contenedor-btn-proyectos">
+                            <button type="button" class="btn-proyectos" >Show Proyect</button>
+                        </div>    
                     </div>  
                 </div>
 
@@ -203,14 +222,15 @@
                 <div class="proyecto">
                     
                     <div class="textoProyecto">
-                    <h3 class="hProyectos">Encriptador de Texto</h3>
-                    <p class="pProyectos">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iste harum eligendi officiis natus, soluta quis.
-                    </p>
+                        <h3 class="hProyectos">Encriptador de Texto</h3>
+                        <p class="pProyectos">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Iste harum eligendi officiis natus, soluta quis.
+                        </p>
 
-                    <button type="button" class="btn-proyectos" >Show Proyect</button>
-
+                        <div class="contenedor-btn-proyectos">
+                            <button type="button" class="btn-proyectos" >Show Proyect</button>
+                        </div>    
                     </div>
                     
                     <div class="contenedor-img-proyecto">
@@ -222,19 +242,25 @@
             </section>
         </div>    
 
-        <section class="contenedor-contactos">
+        <section class="contenedor-contactos" >
 
             <div class="contenedor-hyp-contactos">
-                <h5 class="hContactos-uno">Font-End Developer</h5>
+                <div class="hcinco-hyp"> 
+                 <h5 class="hContactos-uno">Font-End Developer</h5>
+                </div>
+
                 <p class="p-contactos-">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Harum saepe repellendus minima voluptas itaque consequuntur! 
                     Aspernatur explicabo ratione dolor temporibus voluptatem fuga.
                 </p>
+
             </div>
 
-            <section class="contactos">
-                
+            
+
+            <section class="contactos" id="particles-js">
+
                 <div class="contact-form">
                     <h2 class="hContactos">Contact Me</h2>
                     <form action="#" method="post">
@@ -246,8 +272,9 @@
 
                         <label for="message" ></label>
                         <textarea id="message" placeholder="Type Your Message" name="message" rows="4" required></textarea>
-
-                        <button type="submit">Send</button>
+                        <div class="btn-form">
+                            <button type="submit">Send</button>
+                        </div>    
                     </form>
                 </div>
                 
@@ -271,7 +298,9 @@
        
     </main>
 
-   
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+	
        
 </body>
 </html>
