@@ -53,6 +53,7 @@ body{
 }
 main{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -61,6 +62,7 @@ main{
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: var(--color-blanco);
    
@@ -73,7 +75,6 @@ main{
  background-image: url("../imag/portada.jpg");
  background-repeat:no-repeat;
  background-size: cover;
- padding: 0 12px;
  height: 650px; 
  display: flex;
  flex-direction: column;
@@ -94,10 +95,11 @@ main{
 }
 
 .navegador{
-    width:100%;
+    width:95%;
     height: 15%;
     margin-top: 20px;
     display: flex;
+    box-sizing: border-box;
     justify-content: end;
     background: transparent;
     backdrop-filter: blur(10px);
@@ -111,25 +113,27 @@ main{
 
 ul{
     display: flex;
-    margin: 5px 1px;
+    box-sizing: border-box;
+    margin: 5px 0px;
     width: 100%;
     flex-direction: row;
-   
 }
 
 .lista{
     display: flex;
-    width: 65%;
-    padding: 15px 5px;
-    justify-content: end;
+    box-sizing: border-box;
+    width: 55%;
+    padding: 15px 0px;
+    justify-content: center;
     align-items: center;
     position: relative; 
 }
 
+
 a{
     margin:20px 0;
     padding: 10px 1px;
-    font-size: 1.2rem;
+    font-size: 18px;
     border-radius: 10px;
     list-style: none;
     color:var(--color-blanco);
@@ -154,6 +158,20 @@ a{
     margin: 2%;
     font-family:var(--goo-font);
   
+}
+
+.contenedor-menu-header{
+    width: 20%;
+    display: none;
+    
+}
+
+.menu-header{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .a-about{
@@ -199,8 +217,8 @@ a{
 
 .mi-nombre{
     justify-content: center;
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 64px;
+    font-weight: bolder;
     font-family: var(--goo-font-cursuva);
     color: var(--color-rosa);
     letter-spacing: 3px;
@@ -214,7 +232,7 @@ a{
     text-decoration: none;
     color: var(--color-blanco);
     border: solid 1px var(--color-rosa);
-    font-size: 0.9rem;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -242,6 +260,7 @@ a:hover{
     width: 100%;
     height: 100%;
     padding: 10px;
+    margin-left: 80px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row; 
@@ -261,13 +280,15 @@ a:hover{
 .imagenParaPerfil{
     width: 40%;
     display: flex;
+    align-items: end;
+    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
+  
     
 }
 
 .imagenParaPerfil img{
     width: 100%;
-   
-   
+    height: 90%;
 }
 .contenedor-de-conedor-de-about{
     display: flex;
@@ -317,7 +338,7 @@ a:hover{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    font-size: 9rem;
+    font-size: 110px;
     letter-spacing: 5px;
     justify-content: center;
     align-items: end;
@@ -346,7 +367,7 @@ a:hover{
    
 }
 .head-hab{
-    font-size:6rem;
+    font-size:90px;
     text-align: center;
     font-family: var(--goo-font-cursuva);
     color: var(--color-rosa);
@@ -358,7 +379,7 @@ a:hover{
     
 }
 .head-hab::first-letter{
-    font-size: 6rem;
+    font-size: 96px;
 }
 
 .contenedor-de-las-habilidades{ 
@@ -434,7 +455,7 @@ a:hover{
 .head-e-formacion{
     display: block;   
     width: 100%;    
-    font-size:6rem;
+    font-size:90px;
     text-align: center;
     font-family: var(--goo-font-cursuva);
     font-weight: 700;
@@ -442,7 +463,7 @@ a:hover{
     letter-spacing: 4px;
 }
 .head-e-formacion::first-letter{
-    font-size: 8rem;
+    font-size: 96px;
 
 }    
 
@@ -455,6 +476,8 @@ a:hover{
     justify-content: center;
     
 }
+
+/*AQUI INICIA LA SECCION PROYECTOS*/
 
 .contenedor-de-los-cursos{
     width: 20%;
@@ -533,7 +556,7 @@ a:hover{
 
 }
 
-/*AQUI INICIA LA SECCION PROYECTOS*/
+/*LA SECCION PROYECTOS*/
 
 .headDos{
     display: flex;
@@ -547,7 +570,7 @@ a:hover{
     display:inline-block;   
     width: 100%;
     height: 100px;   
-    font-size:4rem;
+    font-size:64px;
     text-align: center;
     font-family: var(--goo-font-cursuva);
     font-weight: 700;
@@ -558,7 +581,7 @@ a:hover{
 }
 
 .h-de-proyectos::first-letter{
- font-size: 6rem;
+ font-size: 70px;
  
 }
 
@@ -609,26 +632,26 @@ a:hover{
 
 .hProyectos{ 
  text-align: center;
- font-size:1.5rem ;
+ font-size:20px ;
  color: var(--color-oscuroUno);
  font-family: var(--goo-font-cursuva);
  letter-spacing: 2px;
 }
 
 .hProyectos::first-letter{
-    font-size: 3.5rem;
+    font-size: 48px;
     color: var(--color-rosa);
 }
 
 .pProyectos{
- font-size: 0.8rem;
+ font-size: 16px;
  font-family: var(--goo-font);
  color: var(--color-oscuroUno);
  font-weight: 100;
 }
 
 .pProyectos::first-letter{
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 .contenedor-btn-proyectos{
@@ -642,7 +665,7 @@ a:hover{
     width: 50%;
     font-family: var(--goo-font);
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 16px;
     border-radius: 40px 10px;
     border: solid 2px var(--color-blanco);
     background-color: var(--color-rosa);
@@ -656,6 +679,8 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+
 }
 
 .imagenProyectos{
@@ -666,21 +691,28 @@ a:hover{
     height: 175px;
     border-radius: 10px;
     position: relative;
+    filter: brightness(50%);
+   
 }
 .imagenProyectos-dos{
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 325px;
     height: 175px;
     border-radius: 10px;
+    position: relative;
+    filter: brightness(50%);
 } 
 .contenedor-txt-img{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 150px;
-    height: 50px;
+    width: 175px;
+    height: 75px;
+    font-family: var(--mi-sans);
+    font-weight: normal;
     border-radius: 10px;
     color: var(--color-blanco);
     border: solid 3px var(--color-blanco);
@@ -694,9 +726,7 @@ a:hover{
     flex-direction: row;
     width: 80%;
     height: 400px; 
-    background-image: url("../imag/bgContactos.png");
-    background-size:900px 500px;
-    background-repeat:no-repeat;
+    
 }
 
 
@@ -710,6 +740,9 @@ a:hover{
     width: 50%;
     height: 70%;
     margin: 10px;
+    background-image: url("../imag/bgContactos.png");
+    background-size:500px 400px;
+    background-repeat:no-repeat;
 }
 .hcinco-hyp{
     display: flex;
@@ -899,6 +932,345 @@ footer{
  border-radius: 50%;
 
 }
+
+.contenedor-hab-800{
+ display: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 100%;
+ height:600px;
+ background-color: var(--color-azul-claro);
+}
+
+
+
+
+/* MEDIA QUERYYYYSSSSSSSSSSSSSSS*/
+
+/*telefono*/
+@media (width < 676px){
+    .dev{
+        font-size: 12px;
+    }
+    .mi-nombre{
+        font-size: 20px;
+    }
+    .about {
+        display: none;
+        position: absolute;
+    }
+    .proyects {
+        display: none;
+        position: absolute;
+    }
+    .skills{
+        display: none;
+        position: absolute;
+    }
+    .btn-list{
+        font-weight: normal;
+        width: 50%;
+    }
+    .lista{
+        width: 60%;
+    }
+
+    .contenedor-menu-header{
+        display: contents;
+       
+    }
+    .menu-header{
+     width: 25%;  
+       
+    
+    }
+    .cabeza{
+        height: 300px;
+    }
+    .navegador{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+    }
+    .btn-cv{
+        width: 80%;
+    }
+    .contenedor-about{
+        height: 30%;
+    }
+    .logo{
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .cajalogo {
+        width: 80%;
+        height: 60%;
+
+    }
+    .imagenParaPerfil{
+        width: fit-content;
+        display: none;
+    }
+    .contenedor-de-conedor-de-about{
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .contenedor-Acerca-de{
+        display: flex;
+        height: 220px;
+        padding: 10px;
+    }
+    .h-About{
+        padding-top: 80px;
+        font-size: 50px;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .textoPrincipal{
+        padding: 10px 5px 0 5px;
+        height: 320px;
+    }
+    .texto-about{
+        font-size: 10px;
+        width: 100%;
+        height: 95%;
+    }
+    .head-hab{
+        font-size: 30px;
+        bottom: 30px;
+       
+    }
+    .contenedor-hab-800{
+        display: flex;
+        height: 475px;
+        justify-content: space-evenly;
+    }
+    .contenedor-de-las-habilidades{
+        height: 100px;
+    }
+    .skill{
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+    }
+    .flex-hab{
+        display: none;
+    }
+    .contenedor-padre-Hab{
+        display: none;
+    }
+    .head-e-formacion{
+        font-size: 40px;
+    }
+    .headEduc{
+        height: 150px;
+    }
+
+    .formacion{
+        margin-top: 0;
+        height: 1200px;
+        
+    }
+    .formacionRow{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-de-los-cursos{
+        width: 100%;
+        padding-top: 20px;
+        
+    }
+    .contenedor-img-curso{
+        width: 150px;
+        height: 200px;
+        
+    }
+    .proyecto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .textoProyecto{
+        height: 20%;
+        width: 100%;
+    }
+    .pProyectos{
+        display: none;
+    }
+    .contenedor-btn-proyectos{
+        display: none;
+    }
+    .hProyectos{
+        display: flex;
+        
+    }
+    .contenedor-img-proyecto{
+        width: 100%;
+        height: 60%;
+    }
+    .imagenProyectos{
+        width:90%;
+       
+    }
+    .imagenProyectos-dos{
+        width:90%;
+       
+    }
+    .contenedor-contactos{
+        width: 100%;
+        align-items: center;
+    }
+    .contenedor-hyp-contactos{
+        display: none;
+    }
+    .contactos{
+       width: 100%;
+       height: 85%;
+    }
+    .hContactos{
+        font-size: 28px;
+    }
+    .contact-form{
+       height: 100%;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"]
+    {
+        padding: 15px 15px 10px 15px;
+    }
+    .contact-form textarea {
+        height: 60px;
+    }
+    .btn-form{
+        margin-top: 10px;
+    }
+    .contact-form button {
+        height: 40%;
+    }
+
+
+};
+
+/*tablet*/
+@media (width <= 850px){
+    .mi-nombre{
+        font-size: 30px;
+    }
+
+    .dev{
+        font-size: 16px;
+    }
+    .h-About{
+        font-size: 80px;
+        
+    }
+    .btn-cv{
+        width: 70%;
+    }
+    .lista{
+        width: 80%;
+        justify-content: end;
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+    .cabeza{
+        height: 450px;
+    }
+    .contenedor-menu-header{
+        display: none;
+    }
+    .contenedor-Acerca-de{
+        height: 450px;
+        flex-wrap:nowrap;
+    }
+    .contenedor-padre-Hab{
+        height: 500px;
+       display: none;
+    }
+
+    .contenedor-hab-800{
+        height: 500px;
+        display: contents;
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+
+    .contenedor-de-las-habilidades{
+        height: 200px;
+    }
+    .contenedor-about{
+        height: 40%;
+    }
+    .textoPrincipal{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .texto-about{
+        width: 90%;
+        height: 90%;
+    }
+
+    .head-hab{
+        font-size: 60px;
+        bottom: unset;
+    }
+    .formacion{
+        height: 600px;
+    }
+    .formacionRow{
+        display: flex;
+    }
+    .contenedor-de-los-cursos{
+        width: 25%;
+    }
+   
+    .contenedor-img-curso{
+        width: 150px;
+        height: 250px;
+    }
+
+    .boton-curso{
+        width: 60%;
+    }
+    .cursos{
+        width: 70%;
+        font-size: 12px;
+    }
+    .contenedor-contactos{
+        width: 100%;
+    }
+};
+
+/*desktop*/
+@media (width < 1000px) {
+   .mi-nombre{
+    font-size: 50px;  
+    }
+    .btn-cv{
+        width: 50%;
+    }
+    .lista{
+        width: 70%;
+    }
+    .imagenParaPerfil img{
+        height: 80%
+    }
+    .texto-about {
+        width: 95%;
+    }
+    
+};
+
 
 
 
